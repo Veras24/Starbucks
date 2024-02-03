@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(cidade.jpg);
+    background-size: cover;
+    padding-top: 90px;
+    padding-right: 90px;
+    padding-left: 90px;
+}
+
+   
+
+.conteudo {
+    width: 100%; /*tamanho*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*centralizar o conteudo*/
+}
+
+.caxa-texto {
+    width: 600px;
+}
+
+.caixa-imagem {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 250px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 80px;
+    transition: 1s;
+    transform: translateY(35px);
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 500;
+}
+span { /*fonte para destacar o logo*/
+    color: rgb(27, 105, 57); 
+    font-size: 70px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+ .logo:hover {
+    width: 80px;
+    cursor: pointer;
+    transition: 1s;
+    transform: translateY(-35px);
+ }
+.Starbucks {
+    width: 330px;
+    z-index: 1;
+}
+
+.red {
+    width: 80px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.red:hover {
+    width: 100px;
+    transform: translateY(-35px) ;
+}
+
+.circulo {
+    background: rgb(27, 105, 57);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 800px); /*recortar a figura */
+    
+}
+
+@media(max-width: 1000px){
+    
+    .circulo{
+        width: 0%;
+        
+    }
+     body {
+    
+       padding-left: 10px;
+       padding-top: 10px;
+       padding-right: 10px;
+     }
+
+     .conteudo {
+        width: 0px;
+     }
+ 
+     
+        
+     
+
+     .Starbucks {
+        width: 160px;
+        justify-content: ri;
+        
+     }
+
+     p {
+        font-size: 0px;
+     }
+    span {
+        font-size: 30px;
+       
+    }
+    .logo {
+        width: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .red {
+        width: 30px;
+        display:flex;
+    }
+    .button {
+        width: 30px;
+        align-self: auto;
+    }
+    .red:hover {
+        width: 30px;
+        transform: translateY(+35px);
+    }
+
+      
+
+}
+    
+     
+    
+
+    
+
+   
+
+    
+
+
